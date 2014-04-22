@@ -11,13 +11,11 @@ au BufWrite /private/tmp/crontab.* set nowritebackup
 " Don't write backup file if vim is being called by "chpass"
 au BufWrite /private/etc/pw.* set nowritebackup
 
-syntax on	"syntax highlight
-"set t_Co=88
-set t_Co=256
+set nu			"line number
+syntax on		"syntax highlight
+set t_Co=256		"or try 88
 set background=light
-colorscheme github
-
-set nu "line number
+colorscheme desert
 
 set ruler		"show cursor's column and row position.
 "set rulerformat=%L	"show total line count.
